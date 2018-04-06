@@ -5,23 +5,28 @@
   "license": "MIT",
   "author": {
     "name": "Duncan Bay",
-    "email": "duncan.bay@gmail.com",
-    "url": ""
+    "email": "duncan.bay@gmail.com"
   },
   "repository": "https://github.com/DJTB/hatsuon",
   "engines": {
-    "node": ">=4"
+    "node": ">=9"
   },
   "scripts": {
     "start": "nps --no-scripts",
     "precommit": "remove-lockfiles && lint-staged",
-    "test": "nps test"
+    "test": "nps test",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.7.0"
+  },
   "devDependencies": {
     "all-contributors-cli": "^4.5.0",
     "babel-cli": "^6.26.0",
@@ -43,7 +48,9 @@
     "nps": "^5.7.1",
     "nps-utils": "^1.4.0",
     "prettier": "^1.7.4",
-    "remove-lockfiles": "^1.4.1"
+    "remove-lockfiles": "^1.4.1",
+    "semantic-release": "^15.1.5",
+    "travis-deploy-once": "^4.4.1"
   },
   "config": {
     "commitizen": {
@@ -64,6 +71,12 @@
     ]
   },
   "keywords": [
-    "🐰"
+    "japanese",
+    "pitch",
+    "accent",
+    "pattern",
+    "pronunciation",
+    "アクセント",
+    "発音"
   ]
 }
