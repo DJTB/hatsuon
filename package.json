@@ -1,0 +1,69 @@
+{
+  "name": "hatsuon",
+  "version": "0.0.0-development",
+  "description": "Japanese pitch accent tools",
+  "license": "MIT",
+  "author": {
+    "name": "Duncan Bay",
+    "email": "duncan.bay@gmail.com",
+    "url": ""
+  },
+  "repository": "https://github.com/DJTB/hatsuon",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "start": "nps --no-scripts",
+    "precommit": "remove-lockfiles && lint-staged",
+    "test": "nps test"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "all-contributors-cli": "^4.5.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "12.0.2",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "2.7.0",
+    "flow-bin": "^0.56.0",
+    "flow-typed": "^2.2.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^4.2.3",
+    "nps": "^5.7.1",
+    "nps-utils": "^1.4.0",
+    "prettier": "^1.7.4",
+    "remove-lockfiles": "^1.4.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "🐰"
+  ]
+}

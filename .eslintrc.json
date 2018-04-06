@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base",
+    "plugin:flowtype/recommended"
+  ],
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "strict": "off"
+  }
+}
