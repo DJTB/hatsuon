@@ -26,13 +26,9 @@ module.exports = {
       description: 'delete the dist directory and run babel to build the files',
       script: series(rimraf('dist'), 'babel --copy-files --out-dir dist --ignore *.test.js src'),
     },
-    eslint: {
-      description: 'Check for linting errors using eslint',
-      script: 'eslint .',
-    },
     lint: {
-      description: 'lint the entire project with eslint' /* & flow */,
-      script: concurrent.nps(/* 'flow',  */ 'eslint'),
+      description: 'lint the entire project with eslint',
+      script: 'eslint .',
     },
     test: {
       default: {

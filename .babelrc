@@ -1,11 +1,11 @@
 {
   "presets": [
-    ["env", {
-      "targets": { "node": 4 }
-    }],
-    "flow"
+    [
+      "env",
+      {
+        "targets": { "node": 4 }
+      }
+    ]
   ],
-  "plugins": [
-    "add-module-exports"
-  ]
+  "plugins": ["add-module-exports"]
 }
