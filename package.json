@@ -1,6 +1,6 @@
 {
   "name": "hatsuon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Japanese pitch accent tools",
   "license": "MIT",
   "author": {
@@ -20,11 +20,7 @@
   },
   "main": "dist/index.js",
   "files": ["dist"],
-  "dependencies": {
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "7.7.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "all-contributors-cli": "^4.5.0",
     "babel-cli": "^6.26.0",
@@ -35,8 +31,9 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^4.8.0",
-    "eslint-config-airbnb-base": "12.0.2",
-    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.7.0",
     "eslint-plugin-import": "2.7.0",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
