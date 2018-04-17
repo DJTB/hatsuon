@@ -49,7 +49,7 @@ import {
   makePitchPattern,
   getPitchPatternName,
   getPitchNumFromPattern,
-} from 'hatsuon/utils';
+} from 'hatsuon/dist/utils';
 ```
 
 ## Related
