@@ -15,8 +15,11 @@
       "contributions": [
         "code",
         "doc",
-        "infra"
+        "infra",
+        "design",
+        "example"
       ]
     }
-  ]
+  ],
+  "repoType": "github"
 }

@@ -14,14 +14,13 @@
   "scripts": {
     "start": "nps --no-scripts",
     "precommit": "remove-lockfiles && lint-staged",
-    "test": "nps test",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "dependencies": {
     "eslint-config-airbnb": "16.1.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
@@ -59,9 +58,7 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ]
+    "collectCoverageFrom": ["src/**/*.js", "!src/**/*.fixture.js"]
   },
   "lint-staged": {
     "src/**/*.js": [
@@ -70,13 +67,5 @@
       "git add"
     ]
   },
-  "keywords": [
-    "japanese",
-    "pitch",
-    "accent",
-    "pattern",
-    "pronunciation",
-    "アクセント",
-    "発音"
-  ]
+  "keywords": ["japanese", "pitch", "accent", "pattern", "pronunciation", "アクセント", "発音"]
 }

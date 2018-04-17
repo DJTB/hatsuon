@@ -1,4 +1,4 @@
-# hatsuon
+# 発音 hatsuon
 
 > Japanese pitch accent tools
 
@@ -10,15 +10,14 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](./other/code_of_conduct.md)
-[![Roadmap](https://img.shields.io/badge/%F0%9F%93%94-roadmap-CD9523.svg?style=flat-square)](./other/roadmap.md)
 
 ## Why?
 
-// TODO
+Japanese dictionaries often display the pitch accent of a word with a single number that determines where the pitch falls. This can be difficult to mentally visualize without counting through the [mora](<https://en.wikipedia.org/wiki/Mora_(linguistics)#Japanese>) of the word. This library provides useful tools for generating pitch patterns which can then be easily displayed via SVG.
 
 ## Installation
 
-```sh 
+```sh
 npm install --save hatsuon
 ```
 
@@ -27,29 +26,50 @@ npm install --save hatsuon
 ```js
 import hatsuon from 'hatsuon';
 
-hatsuon('🐰');
-//=> '👉 🐰 👈'
+hatsuon({ reading: 'ちゅうがっこう', pitchNum: 3 });
+// =>
+{
+  reading: 'ちゅうがっこう',
+  pitchNum: 3,
+  morae: ['ちゅ', 'う', 'が', 'っ', 'こ', 'う'],
+  // low, high, high, low, low, low, low*
+  // *following particle (は、が, の etc) pitch
+  pattern: [0, 1, 1, 0, 0, 0, 0],
+  patternName: '中高', // nakadaka
+}
 ```
 
-## FAQ
+Useful named exports (see source for documentation):
 
-// TODO
+```js
+import {
+  isDigraph,
+  getMorae,
+  getMoraCount,
+  makePitchPattern,
+  getPitchPatternName,
+  getPitchNumFromPattern,
+} from 'hatsuon';
+```
 
 ## Related
 
-// TODO
+[WanaKana](https://github.com/WaniKani/WanaKana) : Japanese romaji <-> kana transliteration library
 
 ## Contributors
 
 Thanks goes to these people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars2.githubusercontent.com/u/22868432?v=3" width="100px;"/><br /><sub>Duncan Bay</sub>](https://github.com/DJTB)<br />[💻](https://github.com/DJTB/hatsuon/commits?author=DJTB "Code") [📖](https://github.com/DJTB/hatsuon/commits?author=DJTB "Documentation") [🚇](#infra-luftywiranda13 "Infrastructure (Hosting, Build-Tools, etc)") |
+
+<!-- prettier-ignore -->
+| [<img src="https://avatars3.githubusercontent.com/u/5353151?s=100" width="100px;"/><br /><sub><b>Duncan Bay</b></sub>](https://github.com/DJTB)<br />[💻](https://github.com/DJTB/hatsuon/commits?author=DJTB "Code") [📖](https://github.com/DJTB/hatsuon/commits?author=DJTB "Documentation") [🚇](#infra-DJTB "Infrastructure (Hosting, Build-Tools, etc)") [🎨](#design-DJTB "Design") [💡](#example-DJTB "Examples") |
 | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
 ## License
 
-MIT &copy; [Duncan Bay]()
+MIT &copy; [Duncan Bay](https://github.com/DJTB)
