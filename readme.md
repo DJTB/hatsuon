@@ -39,7 +39,7 @@ hatsuon({ reading: 'ちゅうがっこう', pitchNum: 3 });
 }
 ```
 
-Useful named exports (see source for documentation):
+Extra available utils (see source for documentation):
 
 ```js
 import {
@@ -49,7 +49,7 @@ import {
   makePitchPattern,
   getPitchPatternName,
   getPitchNumFromPattern,
-} from 'hatsuon';
+} from 'hatsuon/utils';
 ```
 
 ## Related
