@@ -21,6 +21,10 @@ Japanese dictionaries often display the pitch accent of a word with a single num
 npm install --save hatsuon
 ```
 
+## Demo
+
+[Visualization Example](https://djtb.github.io/hatsuon)
+
 ## Usage
 
 ```js

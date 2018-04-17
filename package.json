@@ -8,6 +8,7 @@
     "email": "duncan.bay@gmail.com"
   },
   "repository": "https://github.com/DJTB/hatsuon",
+  "homepage": "https://djtb.github.io/hatsuon",
   "engines": {
     "node": ">=8"
   },
