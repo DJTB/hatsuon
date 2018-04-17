@@ -1,6 +1,6 @@
 {
   "name": "hatsuon",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Japanese pitch accent tools",
   "license": "MIT",
   "author": {
@@ -38,8 +38,6 @@
     "eslint-config-airbnb-base": "12.0.2",
     "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-import": "2.7.0",
-    "flow-bin": "^0.56.0",
-    "flow-typed": "^2.2.0",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
     "lint-staged": "^4.2.3",
