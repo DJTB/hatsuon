@@ -14,8 +14,7 @@
   "scripts": {
     "start": "nps --no-scripts",
     "precommit": "remove-lockfiles && lint-staged",
-    "test": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test": "nps test",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },

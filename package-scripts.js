@@ -24,28 +24,15 @@ module.exports = {
     },
     build: {
       description: 'delete the dist directory and run babel to build the files',
-      script: series(
-        rimraf('dist'),
-        'babel --copy-files --out-dir dist --ignore *.test.js src'
-      ),
+      script: series(rimraf('dist'), 'babel --copy-files --out-dir dist --ignore *.test.js src'),
     },
     eslint: {
       description: 'Check for linting errors using eslint',
       script: 'eslint .',
     },
-    flow: {
-      default: {
-        description: 'Run typechecking with Flow',
-        script: 'flow --quiet',
-      },
-      typed: {
-        description: 'Install libdefs',
-        script: 'flow-typed update',
-      },
-    },
     lint: {
-      description: 'lint the entire project with eslint & flow',
-      script: concurrent.nps('flow', 'eslint'),
+      description: 'lint the entire project with eslint' /* & flow */,
+      script: concurrent.nps(/* 'flow',  */ 'eslint'),
     },
     test: {
       default: {
