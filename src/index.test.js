@@ -17,12 +17,14 @@ describe('hatsuon()', () => {
       pattern: [0, 1, 1, 0, 0],
       patternName: '中高',
     });
-    expect(hatsuon({ reading: 'とっきゅう', pitchNum: 0 })).toEqual({
+  });
+  it('accepts locale', () => {
+    expect(hatsuon({ reading: 'とっきゅう', pitchNum: 0, locale: 'EN' })).toEqual({
       reading: 'とっきゅう',
       pitchNum: 0,
       morae: ['と', 'っ', 'きゅ', 'う'],
       pattern: [0, 1, 1, 1, 1],
-      patternName: '平板',
+      patternName: 'heiban',
     });
   });
 });
