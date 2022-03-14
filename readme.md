@@ -4,7 +4,7 @@
 
 [![npm](https://img.shields.io/npm/v/hatsuon.svg?style=flat-square)](https://www.npmjs.com/package/hatsuon)
 [![npm](https://img.shields.io/npm/dt/hatsuon.svg?style=flat-square)](https://npm-stat.com/charts.html?package=hatsuon&from=2016-04-01)
-[![Travis branch](https://img.shields.io/travis/DJTB/hatsuon/master.svg?style=flat-square)](https://travis-ci.org/DJTB/hatsuon)
+[![Travis branch](https://img.shields.io/travis/DJTB/hatsuon/master.svg?style=flat-square)](https://travis-ci.com/DJTB/hatsuon)
 [![Codecov branch](https://img.shields.io/codecov/c/github/DJTB/hatsuon/master.svg?style=flat-square)](https://codecov.io/github/DJTB/hatsuon)
 <br />
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
