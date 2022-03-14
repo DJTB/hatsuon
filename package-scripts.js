@@ -23,8 +23,14 @@ module.exports = {
       },
     },
     build: {
-      description: 'delete the dist directory and run babel to build the files',
-      script: series(rimraf('dist'), 'babel --copy-files --out-dir dist --ignore *.test.js src'),
+      default: {
+        description: 'Delete the dist directory and run rollup to build the files',
+        script: series(rimraf('dist'), 'rollup -c'),
+      },
+      watch: {
+        description: 'Watch and rebuild dist',
+        script: 'rollup -c -w',
+      },
     },
     lint: {
       description: 'lint the entire project with eslint',
