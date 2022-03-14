@@ -1,4 +1,4 @@
-import hatsuon from './index';
+import { hatsuon } from './index';
 
 describe('hatsuon()', () => {
   it('sane default', () =>
@@ -9,6 +9,7 @@ describe('hatsuon()', () => {
       pattern: [],
       patternName: '不詳',
     }));
+
   it('works', () => {
     expect(hatsuon({ reading: 'よみかた', pitchNum: 3 })).toEqual({
       reading: 'よみかた',
@@ -18,6 +19,7 @@ describe('hatsuon()', () => {
       patternName: '中高',
     });
   });
+
   it('accepts locale', () => {
     expect(hatsuon({ reading: 'とっきゅう', pitchNum: 0, locale: 'EN' })).toEqual({
       reading: 'とっきゅう',

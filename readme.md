@@ -8,7 +8,6 @@
 [![Codecov branch](https://img.shields.io/codecov/c/github/DJTB/hatsuon/master.svg?style=flat-square)](https://codecov.io/github/DJTB/hatsuon)
 <br />
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square)](./code_of_conduct.md)
 
 ## Why?
@@ -28,7 +27,7 @@ npm install --save hatsuon
 ## Usage
 
 ```js
-import hatsuon from 'hatsuon';
+import { hatsuon } from 'hatsuon';
 
 hatsuon({ reading: 'ちゅうがっこう', pitchNum: 3 });
 // =>
@@ -53,7 +52,7 @@ import {
   makePitchPattern,
   getPitchPatternName,
   getPitchNumFromPattern,
-} from 'hatsuon/dist/utils';
+} from 'hatsuon';
 ```
 
 ## Related
